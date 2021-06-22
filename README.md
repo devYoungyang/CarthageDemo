@@ -1,5 +1,5 @@
 # CarthageDemo
-##### carthage管理三方库
+### carthage管理三方库
 
 ###### 使用Carthage安装依赖
 
