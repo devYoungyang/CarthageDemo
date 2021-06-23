@@ -4,6 +4,7 @@
 //
 //  Created by Yang on 2021/6/22.
 //
+import RxSwift
 import SwifterSwift
 import UIKit
 
@@ -13,8 +14,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.view.backgroundColor = UIColor.random
+        
     }
-
+    
 
 }
 

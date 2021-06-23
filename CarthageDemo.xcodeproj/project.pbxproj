@@ -15,6 +15,7 @@
 		2F84C7F32681C6D40062E5CA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F84C7F12681C6D40062E5CA /* LaunchScreen.storyboard */; };
 		2F84C7FC2681CFC40062E5CA /* SwifterSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F84C7FB2681CFC40062E5CA /* SwifterSwift.framework */; };
 		2F84C7FD2681CFC40062E5CA /* SwifterSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2F84C7FB2681CFC40062E5CA /* SwifterSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CD1165D1E334A4DC57D7A45D /* Pods_CarthageDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1428B5532C268BE232D64969 /* Pods_CarthageDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -32,6 +33,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1428B5532C268BE232D64969 /* Pods_CarthageDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CarthageDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F84C7E32681C6D10062E5CA /* CarthageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CarthageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2F84C7E62681C6D10062E5CA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2F84C7E82681C6D10062E5CA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,6 +43,8 @@
 		2F84C7F22681C6D40062E5CA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F84C7F42681C6D40062E5CA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F84C7FB2681CFC40062E5CA /* SwifterSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwifterSwift.framework; path = Carthage/Build/iOS/SwifterSwift.framework; sourceTree = "<group>"; };
+		7DE44C67D50F45ABE9702169 /* Pods-CarthageDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarthageDemo.release.xcconfig"; path = "Target Support Files/Pods-CarthageDemo/Pods-CarthageDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C2A9BA9BF68A04D3E63DF659 /* Pods-CarthageDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CarthageDemo.debug.xcconfig"; path = "Target Support Files/Pods-CarthageDemo/Pods-CarthageDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +53,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2F84C7FC2681CFC40062E5CA /* SwifterSwift.framework in Frameworks */,
+				CD1165D1E334A4DC57D7A45D /* Pods_CarthageDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +66,7 @@
 				2F84C7E52681C6D10062E5CA /* CarthageDemo */,
 				2F84C7E42681C6D10062E5CA /* Products */,
 				2F84C7FA2681CFC40062E5CA /* Frameworks */,
+				39B7376B47166BBCD7FD4870 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -90,8 +96,19 @@
 			isa = PBXGroup;
 			children = (
 				2F84C7FB2681CFC40062E5CA /* SwifterSwift.framework */,
+				1428B5532C268BE232D64969 /* Pods_CarthageDemo.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		39B7376B47166BBCD7FD4870 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C2A9BA9BF68A04D3E63DF659 /* Pods-CarthageDemo.debug.xcconfig */,
+				7DE44C67D50F45ABE9702169 /* Pods-CarthageDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,11 +118,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2F84C7F72681C6D40062E5CA /* Build configuration list for PBXNativeTarget "CarthageDemo" */;
 			buildPhases = (
+				3FBB8791FC1ED4CB69E209D2 /* [CP] Check Pods Manifest.lock */,
 				2F84C7DF2681C6D10062E5CA /* Sources */,
 				2F84C7E02681C6D10062E5CA /* Frameworks */,
 				2F84C7E12681C6D10062E5CA /* Resources */,
 				2F84C7FE2681CFC40062E5CA /* Embed Frameworks */,
 				2F84C7FF2681CFF70062E5CA /* ShellScript */,
+				8800D2973730872425BF4B4F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -179,6 +198,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n";
+		};
+		3FBB8791FC1ED4CB69E209D2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CarthageDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8800D2973730872425BF4B4F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CarthageDemo/Pods-CarthageDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CarthageDemo/Pods-CarthageDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CarthageDemo/Pods-CarthageDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -333,6 +391,7 @@
 		};
 		2F84C7F82681C6D40062E5CA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C2A9BA9BF68A04D3E63DF659 /* Pods-CarthageDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -357,6 +416,7 @@
 		};
 		2F84C7F92681C6D40062E5CA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7DE44C67D50F45ABE9702169 /* Pods-CarthageDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
